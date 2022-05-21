@@ -1,0 +1,2 @@
+- This series is an implementation of the Nature of Code by Daniel Shiffman
+You can get the book online for free

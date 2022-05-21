@@ -1,0 +1,11 @@
+To move an object toward the mouse, use this simple algorithm
+
+
+Create a vector pointing from the ObjectLocation to the Mouse
+1: Compute the mouse position in Vector2, 
+2: Subtrack the position of the mouse and location of object    	
+	PVector direction = PVector.sub(mouse, location);
+  
+3: Normalize the Direction Vector to be between 0 and 1,
+4: Scale it by some value 
+5: Make that direction the acceleration
