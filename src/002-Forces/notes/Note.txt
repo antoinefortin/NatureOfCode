@@ -1,0 +1,1 @@
+As this chapter is a review of basic Vector math, I simply implemented the mover class, and experiment on key pressed related to Processing
