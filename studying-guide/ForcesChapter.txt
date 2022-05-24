@@ -1,0 +1,2 @@
+This chapter is all about force, but for the friction and air resistance,  I would recommend watching the video lecture, as the book is a bit more cryptic. 
+It shows the code, and algorithms, but does not properly explain on where to implement it. For deeper explanation, you should what the NatureOfCode lectures byb Dan Shiffman
