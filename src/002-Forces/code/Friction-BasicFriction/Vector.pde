@@ -2,7 +2,9 @@
   Apply constant gravity 
 */
 
-Mover[] movers = new Mover[100];
+Mover[] movers = new Mover[10];
+PVector wind = new PVector(0.02, 0);
+PVector gravity = new PVector(0, .5);
 
 void setup() {
   size(700, 700);
@@ -17,10 +19,17 @@ void draw() {
 
   //[full] Call functions on Mover object.
   for (int i = 0; i < movers.length; i++) {
-    PVector wind = new PVector(0.01, 0);
+    
     float m = movers[i].mass;
-    PVector gravity = new PVector(0, .1*m);
-
+    
+    float c = 0.05;
+    
+    PVector friction = movers[i].velocity.get();
+    friction.mult(-1);
+    friction.normalize();
+    friction.mult(c);
+   
+    movers[i].applyForce(friction);
     movers[i].applyForce(wind);
     movers[i].applyForce(gravity);
 

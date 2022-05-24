@@ -1,0 +1,9 @@
+in Force-ManyObjectManyMass
+We apply a random mass to each object
+
+  for (int i = 0; i < movers.length; i++) {
+    movers[i] = new Mover(random(0.1,2.5),0,0);
+  }
+
+
+For now it does not make sense, as smaller object accelartion is higher with the object is smaller.
